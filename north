@@ -1,6 +1,8 @@
-hello every body
-how are you
-this is is appu
- tyhis is ohio devper
 
-this for gith hub
+ stage("Deploy"){
+            steps {
+                echo "Deploying the container"
+                sh "docker-compose down && docker-compose up -d"
+                
+            }
+        }
